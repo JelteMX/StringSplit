@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="StringSplit.widget.StringSplit" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>StringSplit</name>
+    <description></description>
+
+    <icon />
+
+    <properties>
+        <property key="stringAttr" type="attribute" required="true">
+            <caption>String attribute</caption>
+            <category>Data source</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="onClickMf" type="microflow" required="false" entityProperty="objEntity">
+            <caption>Onclick microflow</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute on click.</description>
+            <returnType type="Void" />
+        </property>
+        <property key="objEntity" type="entity" required="false">
+            <caption>Object Entity</caption>
+            <category>Data source</category>
+            <description></description>
+        </property>
+        <property key="xpathAttr" type="attribute" required="false" entityProperty="objEntity">
+            <caption>Attribute to match on</caption>
+            <category>Data source</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+    </properties>
+</widget>
